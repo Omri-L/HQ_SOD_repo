@@ -31,25 +31,18 @@ For training, change the relevant variables in the parser or use the defaults.
 For testing, change the relevant variables according to your parameters and inputs paths.
 
 ### 5.1. LRP
-	- Inference: run HQ_SOD_repo/LRP/train_unet_upsampled_model.py - change the parameter "--b_train" to False and make sure
-				 the path to the pre-trained parameters in "--parameter" is correct
-	- Train: run HQ_SOD_repo/LRP/train_unet_upsampled_model.py - change the parameter "--b_train" to True. For training from
-			 scratch use "--parameter" value "None".
+	- Inference: run HQ_SOD_repo/LRP/train_unet_upsampled_model.py - change the parameter "--b_train" to False and make sure the path to the pre-trained parameters in "--parameter" is correct
+	- Train: run HQ_SOD_repo/LRP/train_unet_upsampled_model.py - change the parameter "--b_train" to True. For training from scratch use "--parameter" value "None".
 	
 ### 5.2. DKN
-	- Inference: run HQ_SOD_repo/DKN/dkn_inference.py - change the "--rgb_folder" and "--mask_folder" for the correct paths (or use defaults)
-				 change image name "--image_name"
+	- Inference: run HQ_SOD_repo/DKN/dkn_inference.py - change the "--rgb_folder" and "--mask_folder" for the correct paths (or use defaults), change image name "--image_name"
 	- Train: run HQ_SOD_repo/DKN/dkn_train.py - make sure "--train_guide_dir" and "--test_guide_dir" are correct
 	
 ### 5.3. Full SOD model
-	- Inference: run HQ_SOD_repo/inference_full_sod_model.py - make a list of image names in "input_images" and make sure the paths
-				 input image directory and output image directory in "--rgb_folder" and "--mask_folder" are correct.
-				 Make sure the path for the pre-trained parameters in "--merged_model_params" is correct
-	- Train: run HQ_SOD_repo/train_full_sod_model.py - make sure "--train_input_images_dir" and "--test_input_images_dir" are correct
-			 Make sure the path for the pre-trained parameters in "--pre_trained_full_network_params" is correct
+	- Inference: run HQ_SOD_repo/inference_full_sod_model.py - make a list of image names in "input_images" and make sure the paths input image directory and output image directory in "--rgb_folder" and "--mask_folder" are correct. Make sure the path for the pre-trained parameters in "--merged_model_params" is correct
+	- Train: run HQ_SOD_repo/train_full_sod_model.py - make sure "--train_input_images_dir" and "--test_input_images_dir" are correct. Make sure the path for the pre-trained parameters in "--pre_trained_full_network_params" is correct
 
 ## 6. Credits and References:
-[1] - Inspired by https://github.com/ternaus/TernausNet/blob/master/unet_models.py
-[2] - DKN Github pytorch - https://github.com/jun0kim/DKN
-[3] - DUTS dataset - http://saliencydetection.net/duts/ - Lijun Wang, Huchuan Lu, Yifan Wang ,Mengyang Feng, Dong Wang, Baocai Yin, Xiang Ruan, 
-	  "Learning to Detect Salient Objects with Image-level Supervision", CVPR2017
+- [1] - Inspired by https://github.com/ternaus/TernausNet/blob/master/unet_models.py
+- [2] - DKN Github pytorch - https://github.com/jun0kim/DKN
+- [3] - DUTS dataset - http://saliencydetection.net/duts/ - Lijun Wang, Huchuan Lu, Yifan Wang ,Mengyang Feng, Dong Wang, Baocai Yin, Xiang Ruan, "Learning to Detect Salient Objects with Image-level Supervision", CVPR2017
