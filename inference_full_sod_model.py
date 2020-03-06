@@ -22,7 +22,7 @@ for input_image in input_images:
     parser.add_argument('--mask_folder',  default=r'../datasets/DUTS/DUTS-TE/DUTS-TE-Mask/',
                         help='name of low resolution depth image')
     parser.add_argument('--image_name',  default=input_image, help='name of low resolution depth image')
-    parser.add_argument('--output_folder',  default='final_results/Unet16_up_fdkn_merged/', help='output folder')
+    parser.add_argument('--output_folder',  default='final_results/', help='output folder')
     # parser.add_argument('--pre_trained_low_res_sod_params',
     #                     default=r'./saved_models/BASNET/basnet_bsi.pth', help='path to low res sod params')
     # parser.add_argument('--pre_trained_low_res_sod_params',
