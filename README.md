@@ -20,13 +20,13 @@ or use your own path.
 ## 3. Pre-trained weights:
 Download pre-trained weights from here: https://drive.google.com/open?id=1sRoEUvwg5CLxHigHnx4I1-XADsSQuXny
 Extract the files to "HQ_SOD_repo/saved_models/"
-(DKN parameters are already included in the repository in HQ_SOD_repo/DKN/saved_model or HQ_SOD_repo/DKN/parameter)
+(DKN parameters are already included in the repository in HQ_SOD_repo/DKN/saved_model or HQ_SOD_repo/DKN/parameter).
 
 ## 4. Requirements:
-Use the yml file (HQ_SOD_repo/environment_requirements.yml) to see the requirements (using anaconda it is easier to set the environment)
+Use the yml file (HQ_SOD_repo/environment_requirements.yml) to see the requirements (we recommend setting the environment via anaconda).
 
 ## 5. How to run:
-Every model can be trained or tested. The training process can begin from scratch or from pre-trained parameters.
+Every model can be either trained or tested. The training process can begin from scratch or from pre-trained parameters.
 For training, change the relevant variables in the parser or use the defaults.
 For testing, change the relevant variables according to your parameters and inputs paths.
 
@@ -36,11 +36,11 @@ For testing, change the relevant variables according to your parameters and inpu
 	
 ### 5.2. DKN
 	- Inference: run HQ_SOD_repo/DKN/dkn_inference.py - change the "--rgb_folder" and "--mask_folder" for the correct paths (or use defaults), change image name "--image_name"
-	- Train: run HQ_SOD_repo/DKN/dkn_train.py - make sure "--train_guide_dir" and "--test_guide_dir" are correct
+	- Train: run HQ_SOD_repo/DKN/dkn_train.py - make sure "--train_guide_dir" and "--test_guide_dir" are correct.
 	
 ### 5.3. Full SOD model
 	- Inference: run HQ_SOD_repo/inference_full_sod_model.py - make a list of image names in "input_images" and make sure the paths input image directory and output image directory in "--rgb_folder" and "--mask_folder" are correct. Make sure the path for the pre-trained parameters in "--merged_model_params" is correct
-	- Train: run HQ_SOD_repo/train_full_sod_model.py - make sure "--train_input_images_dir" and "--test_input_images_dir" are correct. Make sure the path for the pre-trained parameters in "--pre_trained_full_network_params" is correct
+	- Train: run HQ_SOD_repo/train_full_sod_model.py - make sure "--train_input_images_dir" and "--test_input_images_dir" are correct. Make sure the path for the pre-trained parameters in "--pre_trained_full_network_params" is correct.
 
 ## 6. Credits and References:
 - [1] - Inspired by https://github.com/ternaus/TernausNet/blob/master/unet_models.py
