@@ -5,9 +5,9 @@ by Avia Israeli and Omri Levi (TAU, Deep Learning by Raja Giryes, 0510-7255, Fal
 ## 1. Introduction:
 This repository includes the code for training and testing the high-quality, yet light-weight, SOD model
 described in the paper. It consist of main models:
-- LRP [1] - Low-Resolution Predictor module
-- DKN [2] - Deformable Kernel Networks - the joint-filtering refinement module
-- Full SOD module
+- LRP [1] - Low-Resolution Predictor module.
+- DKN [2] - Deformable Kernel Networks - the joint-filtering refinement module.
+- Full SOD module.
 This repository is for personal educational use only.
 
 ## 2. Dataset:
@@ -39,7 +39,7 @@ For testing, change the relevant variables according to your parameters and inpu
 	- Train: run HQ_SOD_repo/DKN/dkn_train.py - make sure "--train_guide_dir" and "--test_guide_dir" are correct.
 	
 ### 5.3. Full SOD model
-	- Inference: run HQ_SOD_repo/inference_full_sod_model.py - make a list of image names in "input_images" and make sure the paths input image directory and output image directory in "--rgb_folder" and "--mask_folder" are correct. Make sure the path for the pre-trained parameters in "--merged_model_params" is correct
+	- Inference: run HQ_SOD_repo/inference_full_sod_model.py - make a list of image names in "input_images" and make sure the paths input image directory and output image directory in "--rgb_folder" and "--mask_folder" are correct. Make sure the path for the pre-trained parameters in "--merged_model_params" is correct.
 	- Train: run HQ_SOD_repo/train_full_sod_model.py - make sure "--train_input_images_dir" and "--test_input_images_dir" are correct. Make sure the path for the pre-trained parameters in "--pre_trained_full_network_params" is correct.
 
 ## 6. Credits and References:
