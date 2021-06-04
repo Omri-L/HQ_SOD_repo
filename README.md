@@ -2,6 +2,10 @@
 High-Quality Saliency Object Detection repository using FCN and DKN
 by Avia Israeli and Omri Levi (TAU, Deep Learning by Raja Giryes, 0510-7255, Fall 2019) 
 
+Project full report can be found here: https://drive.google.com/file/d/1AEF89GNBrMD5KdLUGSAbhaeC0AqNyRVS/view?usp=sharing
+
+![SOD Model](model.png)
+
 ## 1. Introduction:
 This repository includes the code for training and testing the high-quality, yet light-weight, SOD model
 described in the paper. It consist of main models:
@@ -16,6 +20,8 @@ The dataset should contain 2 folders: DUTS-TR, DUTS-TE for training and testing.
 Every folder should contain 2 sub-folders: DUTS-TR-Image and DUTS-TR-Mask for training (or DUTS-TE-Image and DUTS-TE-Mask for testing).
 In order to use the default path (as defined in our code) put the dataset in a different folder from the repository named "datasets"
 or use your own path.
+
+![Results on DUTS-TE dataset](duts_results.png)
 
 ## 3. Pre-trained weights:
 Download pre-trained weights from here: https://drive.google.com/open?id=1sRoEUvwg5CLxHigHnx4I1-XADsSQuXny
