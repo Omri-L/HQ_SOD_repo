@@ -1,5 +1,5 @@
 # HQ_SOD_repo
-High-Quality Saliency Object Detection repository using FCN and DKN.
+High-Quality Saliency Object Detection repository using FCN and DKN,
 by Avia Israeli and Omri Levi (TAU, Deep Learning by Raja Giryes, 0510-7255, Fall 2019).
 
 Project full report can be found here: https://drive.google.com/file/d/1AEF89GNBrMD5KdLUGSAbhaeC0AqNyRVS/view?usp=sharing
